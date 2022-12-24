@@ -43,16 +43,16 @@ public class OrderService {
         return orderRepository.getAllOrdersRepository();
     }
 
-    public void getCountOfUnassignedOrdersService() {
-        orderRepository.getCountOfUnassignedOrdersRepository();
+    public Integer getCountOfUnassignedOrdersService() {
+       return orderRepository.getCountOfUnassignedOrdersRepository();
     }
 
-    public void getOrdersLeftAfterGivenTimeByPartnerIdService(String time, String partnerId) {
-        orderRepository.getOrdersLeftAfterGivenTimeByPartnerIdRepository(time,partnerId);
+    public Integer getOrdersLeftAfterGivenTimeByPartnerIdService(String time, String partnerId) {
+        return orderRepository.getOrdersLeftAfterGivenTimeByPartnerIdRepository(time,partnerId);
     }
 
     public String getLastDeliveryTimeByPartnerIdService(String partnerId) {
-        orderRepository.getLastDeliveryTimeByPartnerIdRepository(partnerId);
+        return orderRepository.getLastDeliveryTimeByPartnerIdRepository(partnerId);
     }
     public void deletePartnerByIdService(String partnerId) {
         orderRepository.deletePartnerByIdRepository(partnerId);
